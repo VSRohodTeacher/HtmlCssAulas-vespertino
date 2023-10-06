@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#pagina{
+    width: 100%;
+    /* margin 1 valor = todos os lados */
+    /* margin 2 valores = eixo y(cima e baixo) e eixo x (esquerda e direita)*/
+    /* margin 4 valores = sentido horario (cima, direita, baixo e esquerda) */
+    margin: 0px auto;
+    /* margin-bottom: 20px; */
+    /* margin-left: 5px; */
+    /* margin-right: 50px; */
+}
+
+p{
+    color: gray;
+}
+
+#cabecalho{
+    width: 100%;
+    height: 60px;
+    background-color: red;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    line-height: 60px;
+}
