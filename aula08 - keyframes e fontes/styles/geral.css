@@ -1,0 +1,103 @@
+@keyframes mudaCor {
+    0%{
+        background-color: crimson;
+        margin-left: 50px;
+    }
+    10%{
+        background-color: blue;
+        margin-left: 300px;
+    }
+    20%{
+        background-color: black;
+        margin-left: 0px;
+    }
+    30%{
+        background-color: green;
+        width: 300px;
+    }
+    40%{
+        background-color: yellow;
+        width: 600px;
+    }
+    50%{
+        background-color: purple;
+        width: 500px;
+    }
+    60%{
+        background-color: pink;
+    }
+    70%{
+        background-color: gray;
+    }
+    80%{
+        background-color: orange;
+    }
+    90%{
+        background-color: lightseagreen;
+    }
+    100%{
+        background-color: cornflowerblue;
+    }
+}
+
+@keyframes mudaBackground {
+    0%{
+        background-image: url(../images/mulherDeLaranja.jpg);
+        transition: 1s;
+    }
+    50%{
+        background-image: url(../images/porDoSol.jpg);
+        transition: 1s;
+    }
+    100%{
+        background-image: url(../images/carro.jpg);
+        transition: 1s;
+    }
+}
+
+/* fontes */
+@font-face{
+    font-family: Akira ;
+    src: url(../fonts/akira_expanded/Akira\ Expanded\ Demo.otf);
+/* tipos de arquivo de fonte : otf,ttf */
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(../fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: Inter;
+    src: url(../fonts/Inter/static/Inter-Bold.ttf);
+    font-weight: bold;
+}
+
+h3{
+    font-family: Akira ;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Inter;
+}
+
+#caixaCor{
+    width: 500px;
+    height: 500px;
+    background-color: crimson;
+    animation-name: mudaCor ;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+
+#caixaImagem{
+    width: 500px;
+    height: 500px;
+    background-image: url(../images/carro.jpg);
+    background-size: cover;
+    background-position: right;
+    animation: mudaBackground 10s infinite;
+}
