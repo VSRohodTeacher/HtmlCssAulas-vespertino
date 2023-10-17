@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 9 - Formulários</title>
+    <link rel="stylesheet" href="styles/geral.css">
+</head>
+<body>
+    <h1>FORMULÁRIO</h1>
+    <h3>cadastro</h3>
+    <!-- GET - PEGA AS INFORMAÇÕES, COLOCA NO URL, MANDA SERVIDOR -->
+    <!-- POST - PEGA AS INFORMAÇÕES, MANDA SERVIDOR -->
+    <form action="cadastrar.php" method="post">
+        <!-- TEXT - texto normal -->
+        <label for="nome">Nome*</label>
+        <input type="text" id="nome" required placeholder="Digite o seu nome">
+        
+        <!-- PASSWORD - PARA SENHAS  -->
+        <label for="senha">Senha*</label>
+        <input type="password" id="senha" disabled placeholder="Digite a sua melhor senha!">
+        
+        <!-- EMAIL - PARA VALIDAR EMAIL DE FORMA SIMPLES -->
+        <label for="email">Digite o e-mail</label>
+        <input type="email" id="email" placeholder="Digite o seu email">
+        
+        <!-- NUMBER - PARA RECEBER VALORES NUMÉRICOS -->
+        <label for="idade">Digite a sua idade</label>
+        <input type="number" id="idade" step="1" min="1" max="10" placeholder="Idade">
+        
+        <!-- DATE - PARA DATAS -->
+        <label for="dataDeNascimento">Coloque a sua data de nascimento</label>
+        <input type="date" id="dataDeNascimento">
+
+        <!-- TIME - PARA HORAS -->
+        <label for="relogio">Coloque a hora do nascimento</label>
+        <input type="time" id="relogio">
+
+        <!-- COLOR - PARA CORES -->
+        <label for="cor">Coloque a sua cor favorita</label>
+        <input type="color" id="cor">
+
+        <!-- FILE - PARA ARQUIVOS -->
+        <label for="foto">Insira uma imagem de perfil</label>
+        <input type="file" id="foto">
+
+        <!-- CHECKBOX - PARA VERIFICAR SE SIM OU NÃO -->
+        <label for="mandaEmail">Deseja receber notificações</label>
+        <input type="checkbox" id="mandaEmail">
+
+        <!-- RADIO - VÁRIAS OPCÕES PODENDO APENAS MARCAR UMA -->
+        <fieldset>
+            <legend>Qual é o seu sexo?</legend>
+            Homem<input type="radio" name="sexo" value="homem">
+            Mulher<input type="radio" name="sexo" value="mulher">
+            Não dizer<input type="radio" name="sexo" value="naoDizer">
+        </fieldset>
+        <!-- SELECT - VÁRIAS OPÇÕES -->
+        <label for="estado">Selecione o estado onde mora</label>
+        <select id="estado">
+            <option value="DF">Distrito Federal</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="AC">Acre</option>
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="BA">Bahia</option>
+        </select>
+
+        <!-- TEXTAREA - ÁREA DE TEXTO -->
+        <label for="feedback">Digite seu feedback</label>
+        <textarea id="feedback" placeholder="Digite seu feedback" cols="50" rows="20" maxlength="10" style="resize: none;"></textarea>
+
+        <button type="submit">CADASTRAR</button>
+        <button type="reset">REFAZER FORMULÁRIO</button>
+        <!-- SUBMIT - ENVIA -->
+        <!-- RESET - APAGA OS INPUTS -->
+        <!-- MENU - BOTÃO PARA MENUS -->
+        <!-- BUTTON - BOTÃO SEM AÇÃO -->
+
+    <!-- <input type="button" value="MENSAGEM"> -->
+    </form>
+</body>
+</html>
