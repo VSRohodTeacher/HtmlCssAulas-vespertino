@@ -65,6 +65,10 @@ main{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+#formulario:has(p){
+    background-color: aqua;
+}
+
 h2{
     color: rgb(89, 30, 185);
     margin: 20px 0px;
