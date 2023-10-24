@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade</title>
+    <link rel="stylesheet" href="styles/geral.css">
+    <link rel="stylesheet" href="styles/@media.css" media="screen and (max-width: 768px)">
+    <link rel="stylesheet" href="styles/landscape.css" media="screen and (orientation : landscape)"> <!-- LANDSCAPE - paisagem ou deitado  -->
+    <link rel="stylesheet" href="styles/portrait.css" media="screen and (orientation : portrait)"><!-- PORTRAIT - retrato ou em pé  -->
+</head>
+<body>
+    <div id="pagina">
+        <header>
+            <div id="logo">
+                <img src="images/images.jpeg" alt="">
+            </div>
+            <nav id="opcoesPc">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Atividade</a></li>
+                    <li><a href="#">ELEMENTO</a></li>
+                    <li><a href="#">ELEMENTO</a></li>
+                    <li><a href="#">ELEMENTO</a></li>
+                </ul>
+            </nav>
+            <!-- mobile -->
+            <div id="menuMobile" onclick="abrirOpcoes()">
+                <img src="images/menuIcon.svg" alt="">
+            </div>
+        </header>
+<!-- menu mobile -->
+        <nav id="opcoesMobile">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Atividade</a></li>
+                <li><a href="#">ELEMENTO</a></li>
+                <li><a href="#">ELEMENTO</a></li>
+                <li><a href="#">ELEMENTO</a></li>
+            </ul>
+        </nav>
+<!-- menu mobile -->       
+        <main>
+
+            <picture>
+                <!-- picture - muitos srcs -->
+                <source srcset="images/mulherdancandoMenor.jpg" media="screen and (max-width : 768px)">
+                <img src="images/mulherdancando.jpg" alt="Uma mulher dançando no lago">               
+            </picture>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit at illum aliquam hic perferendis. Porro earum nulla culpa impedit laboriosam sequi fugiat velit expedita odit, pariatur quidem tenetur maiores consectetur!</p>
+        </main>
+        <footer></footer>
+    </div>
+
+
+    <script>
+        function abrirOpcoes(){
+            if (opcoesMobile.style.display == "none"){
+                opcoesMobile.style.display = "flex"
+            }else{
+                opcoesMobile.style.display = "none"
+            }
+        }
+    </script>
+</body>
+</html>
