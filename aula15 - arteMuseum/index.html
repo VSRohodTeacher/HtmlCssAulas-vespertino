@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ArteMuseu</title>
     <link rel="stylesheet" href="styles/geral.css">
+    <link rel="stylesheet" href="styles/@Media.css" media="screen and (max-width : 768px)">
 </head>
 <body>
     <div id="pagina">
@@ -17,13 +18,27 @@
                     <li><a href="#">Contato</a></li>
                 </ul>
             </nav>
+            <div id="menuIcon" onclick="abrirMenu()">
+                <img class="imagem" src="images/menuIcon.svg" alt="">
+            </div>
         </header>
+        <nav id="menuMobile">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Galeria</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
         <main>
             <h2>DESTAQUE DA SEMANA</h2>
             <hr>
             <div id="destaque">
-                <h3>Elizabeth</h5>
-                <img class="imagem" src="images/elizabeth.jpg" alt="">
+                <h3>Elizabeth</h3>
+                <picture>
+                    <source class="imagem" srcset="images/elizabethMenor.png" media="screen and (max-width : 768px)">
+                    <source class="imagem" srcset="images/elizabethLandscape.png" media="screen and ( orientation: landscape) and (max-height : 500px)">
+                    <img class="imagem" src="images/elizabeth.jpg" alt="">
+                </picture>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, deserunt amet? Quibusdam repellat repellendus distinctio perferendis nobis minima possimus! Alias aut nostrum mollitia voluptatibus porro. Aliquid itaque sint quaerat quam.</p>
                 <button type="button">Ver sobre</button>
             </div>
@@ -54,5 +69,14 @@
         </main>
         <footer></footer>
     </div>
+    <script>
+        function abrirMenu(){
+            if(menuMobile.style.display == "none"){
+                menuMobile.style.display = "flex";
+            }else{
+                menuMobile.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>

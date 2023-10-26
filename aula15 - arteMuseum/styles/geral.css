@@ -47,6 +47,22 @@ li a{
     text-decoration: none;
     color: white;
 }
+
+#menuIcon{
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: 0.5s;
+    display: none;
+}
+
+#menuIcon:hover{
+    box-shadow: 5px 5px white;
+}
+
+#menuMobile{
+    display: none;
+}
 /* fim cabecalho */
 
 /* conteudo */
@@ -91,7 +107,15 @@ button{
 }
 
 #galeria{
-    
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+}
+
+#textoPagina{
+    width: 80%;
+    margin: 20px 0px;
 }
 
 .post{
